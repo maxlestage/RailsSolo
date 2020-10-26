@@ -84,15 +84,12 @@ test:
 #
 production:
   <<: *default
-  username: eojpkrdrczzyrj
+  user: eojpkrdrczzyrj
   password: <%= ENV['RAILSSOLO_DATABASE_PASSWORD'] %>
-
-database: d4ucl2mvnrqa2a
+  database: d4ucl2mvnrqa2a
   host: ec2-54-170-123-247.eu-west-1.compute.amazonaws.com
   port: 5432
   password: e9c370b4f1973162305b2766afd36ad2445fd1627c5d054fa7e810fdecf1a082
   uri: postgres://eojpkrdrczzyrj:e9c370b4f1973162305b2766afd36ad2445fd1627c5d054fa7e810fdecf1a082@ec2-54-170-123-247.eu-west-1.compute.amazonaws.com:5432/d4ucl2mvnrqa2a
-
-
 #Heroku CLI
 #heroku pg:psql postgresql-flat-09578 --app railssolo
