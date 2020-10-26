@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#home'
   get '/salut(/:name)', to: 'welcome#salut', as: 'salut' 
-  resources :posts
+  #resources :posts
 
     ### posts ###
     
