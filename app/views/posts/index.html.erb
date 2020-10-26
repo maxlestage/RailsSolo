@@ -1,0 +1,15 @@
+<h1>Articles</h1>
+
+<% @posts.each do |post|  %>
+    <h3> <%= post.name %> </h3> 
+    <p> <%= post.content %> </p>
+    <p> 
+        <a href="<%= post_path(post.id) %>" class="btn btn-primary"> Lire la suite </a> 
+        <a href="<%= edit_post_path(post.id) %>" class="btn btn-success"> Editer l'article </a>
+        <a href="<%= post_path(post.id) %>" class="btn btn-danger" data-confirm="Êtes-vous sûr de vouloir effacer ce contenu?" data-method="DELETE"> Supprimer l'article </a>  
+    </p>
+<% end %>
+
+<p> 
+    <a href="<%= new_post_path %>" class="btn btn-warning"> Créer un article </a>  
+</p>
